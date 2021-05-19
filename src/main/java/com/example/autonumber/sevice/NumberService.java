@@ -51,7 +51,6 @@ public class NumberService {
         char[] letters = autoNumber.getText().toCharArray();
         if (autoNumber.getNumber().get() < 999) {
             boxNumbers.add(autoNumber.getText() + autoNumber.number.incrementAndGet());
-            System.out.println(boxNumbers);
             return autoNumber.generatedAutoNumber(autoNumber.getText(), autoNumber.number.get());
         }
         if (autoNumber.getNumber().get() == 999) {
